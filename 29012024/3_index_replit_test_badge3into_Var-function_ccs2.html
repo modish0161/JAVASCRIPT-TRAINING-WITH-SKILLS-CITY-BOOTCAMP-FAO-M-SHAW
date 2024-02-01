@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>My first Javascript</title>
+        <link href="style2.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Add an h1 element with an id for easier reference -->
+        <h1 id="greeting-heading">Initial Greeting</h1>
+        <!-- Include the replit badge script -->
+        <script src="app.js" theme="blue" defer></script>
+        <!-- JavaScript to update the content of the h1 element using var -->
+        <script>
+            // Declare a variable using var
+            var greeting = "Hello, World!";
+
+            // Log the variable to the console
+            console.log(greeting);
+
+            // Update the variable
+            greeting = "Hi there!";
+
+            // Log the updated variable to the console
+            console.log(greeting);
+
+            // Update the content of the h1 element
+            document.getElementById("greeting-heading").textContent = greeting;
+        </script>
+    </body>
+</html>

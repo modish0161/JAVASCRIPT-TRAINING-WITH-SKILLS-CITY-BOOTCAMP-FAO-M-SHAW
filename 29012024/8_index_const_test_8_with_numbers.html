@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Const Example with Numbers</title>
+        <link href="style2.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Add an h1 element with an id for easier reference -->
+        <h1 id="const-example-heading">Const Example</h1>
+        <!-- Include the JavaScript file -->
+        <script src="app.js"></script>
+        <!-- JavaScript to update the content of the h1 element using const -->
+        <script>
+            // Declare a constant variable using const with a number
+            const constantNumber = 42;
+
+            // Log the constant variable to the console
+            console.log(constantNumber);
+
+            // Attempt to update the constant variable with a different number (This will result in an error)
+            // Uncommenting the line below will cause an error: "Assignment to constant variable"
+            // constantNumber = 99;
+
+            // Log the constant variable to the console after the attempted update
+            console.log(constantNumber);
+
+            // Update the content of the h1 element
+            document.getElementById("const-example-heading").textContent = "The constant number is: " + constantNumber;
+        </script>
+    </body>
+</html>
+<!-----In this example, I've created a constant variable named constantNumber with the value 42. If you try to uncomment the line attempting to update constantNumber to 99, it will result in an error because you cannot reassign a value to a constant variable after its initial assignment. The content of the <h1> element will display "The constant number is: 42".------->
+>

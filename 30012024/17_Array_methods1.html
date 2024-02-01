@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array Methods Exercise</title>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        </style>
+    </head>
+    <body>
+        <script>
+    // Array Methods Exercise
+    //let num = ["1", "2", "3", "34", "4"];
+    //console.log(typeof num);
+
+    //let stringnum = num.toString(); // num is now a string 
+    //console.log(stringnum, typeof stringnum);
+
+    //let fruits = ["I", "am", "Programmer"];
+    //console.log(fruits.join("*")); // "I*am*Programmer"
+    //console.log(typeof fruits.join("*")); // string
+
+     //let c = num.join(" and ");
+     //console.log(c, typeof c);
+
+    let numbersArray = [37, 2, 41, 7, 8, 9, 0, null];
+    
+    // Pop returns the popped element
+    //let r = numbersArray.pop();
+    //console.log(numbersArray, r);
+
+    // Push returns the new array length
+    // let r = numbersArray.push(56);
+    // console.log(numbersArray, r);
+
+    // Shift removes an element from the start of the array
+    // let r = numbersArray.shift();
+    // console.log(r, numbersArray);
+
+    // Unshift adds an element to the start of the array and returns the new array length
+    let r = numbersArray.unshift(78);
+    console.log(r, numbersArray);
+    console.log(numbersArray.length);
+
+    /*let fruitsArray = ["Apple", "Orange", "Banana"];
+    console.log(fruitsArray.length);
+    fruitsArray.unshift("Guava");
+    console.log(fruitsArray);
+    console.log(fruitsArray.length);
+        </script>
+    </body>
+</html>

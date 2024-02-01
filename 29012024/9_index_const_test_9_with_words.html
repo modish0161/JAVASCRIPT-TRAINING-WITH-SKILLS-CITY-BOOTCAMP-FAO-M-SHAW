@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Const Example with Words</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Add an h1 element with an id for easier reference -->
+        <h1 id="const-example-heading">Const Example</h1>
+        <!-- Include the JavaScript file -->
+        <script src="app.js"></script>
+        <!-- JavaScript to update the content of the h1 element using const -->
+        <script>
+            // Declare a constant variable using const with a string
+            const constantWord = "Hello";
+
+            // Log the constant variable to the console
+            console.log(constantWord);
+
+            // Attempt to update the constant variable with a different string (This will result in an error)
+            // Uncommenting the line below will cause an error: "Assignment to constant variable"
+            // constantWord = "World";
+
+            // Log the constant variable to the console after the attempted update
+            console.log(constantWord);
+
+            // Update the content of the h1 element
+            document.getElementById("const-example-heading").textContent = "The constant word is: " + constantWord;
+        </script>
+        <!--
+        In this example, I've created a constant variable named constantWord with the value "Hello".
+        If you try to uncomment the line attempting to update constantWord to "World", it will result
+        in an error because you cannot reassign a value to a constant variable after its initial assignment.
+        The content of the <h1> element will display "The constant word is: Hello".
+        -->
+    </body>
+</html>

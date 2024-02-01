@@ -1,0 +1,24 @@
+<!-- Example 10: Conditional Rendering -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Example 10</title>
+        <link href="style2.css" rel="stylesheet">
+    </head>
+    <body>
+        <script src="app.js"></script>
+        <script>
+            // Conditional rendering
+            const isLoggedIn = false;
+
+            if (isLoggedIn) {
+                document.getElementById("user-info").innerHTML = "Welcome, User!";
+            } else {
+                document.getElementById("user-info").innerHTML = "Please log in.";
+            }
+        </script>
+        <div id="user-info"></div>
+    </body>
+</html>

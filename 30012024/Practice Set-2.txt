@@ -1,0 +1,37 @@
+
+08_Chapter2_Practice Set_2
+SK
+
+Skills-CityMent
+Skills-CityMent
+6 followers
+
+Follow
+Sep 27, 2023
+·
+Forked from 
+Dr-AmiraAmira
+/
+Practice Set_2
+
+---------------------------------------
+
+Practice Set 2
+Ok everyone, now lets put our knowledge to the test. and try to solve the following questions.
+
+Q1: Using Logical Operators
+Create a JavaScript program to check if a age is between 10 and 20.
+
+Q2: Using Switch Case
+Demonsrate the use of switch case in JavaScript.
+
+Q3: Divisible by 2 and 3
+Create a JavaScript program to check if a number is divisible by 2 and 3.
+
+Q4: Divisible by 2 or 3
+Create a JavaScript program to check if a number is divisible by 2 or 3.
+
+Q5: Using Ternary Operator
+Print "you can drive" if the age is greater than or equal to 18, otherwise print "you cannot drive". Use the ternary operator.
+
+Congratulations! You have completed the practice set. Now you can move on to the next chapter.

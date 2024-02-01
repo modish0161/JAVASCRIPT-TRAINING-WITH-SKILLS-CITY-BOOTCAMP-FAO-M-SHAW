@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Switch Case Examples</title>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        </style>
+    </head>
+    <body>
+        <script>
+    // Example 1: Checking a Season based on Month
+    let month = prompt("Enter a month (e.g., January)").toLowerCase();
+    let season;
+
+    switch (month) {
+        case "december":
+        case "january":
+        case "february":
+            season = "Winter";
+            break;
+        case "march":
+        case "april":
+        case "may":
+            season = "Spring";
+            break;
+        case "june":
+        case "july":
+        case "august":
+            season = "Summer";
+            break;
+        case "september":
+        case "october":
+        case "november":
+            season = "Fall";
+            break;
+        default:
+            season = "Invalid Month";
+    }
+
+    displayResult("Season based on Month", month, season);
+
+    // Example 2: Checking a Grade based on Percentage
+    let percentage = prompt("Enter your percentage (e.g., 85)");
+    let grade;
+
+    switch (true) {
+        case percentage >= 90:
+            grade = "A";
+            break;
+        case percentage >= 80:
+            grade = "B";
+            break;
+        case percentage >= 70:
+            grade = "C";
+            break;
+        case percentage >= 60:
+            grade = "D";
+            break;
+        default:
+            grade = "F";
+    }
+
+    displayResult("Grade based on Percentage", percentage, grade);
+
+    // Example 3: Checking a Country based on Capital
+    let capital = prompt("Enter a capital city (e.g., Paris)").toLowerCase();
+    let country;
+
+    switch (capital) {
+        case "paris":
+            country = "France";
+            break;
+        case "tokyo":
+            country = "Japan";
+            break;
+        case "rome":
+            country = "Italy";
+            break;
+        case "washington":
+            country = "United States";
+            break;
+        default:
+            country = "Unknown Country";
+    }
+
+    displayResult("Country based on Capital", capital, country);
+
+    // Helper function to display results in a table
+    function displayResult(title, input, result) {
+        document.write("<h2>" + title + "</h2>");
+        document.write("<table>");
+        document.write("<tr><th>Input</th><th>Result</th></tr>");
+        document.write("<tr><td>" + input + "</td><td>" + result + "</td></tr>");
+        document.write("</table>");
+    }
+        </script>
+    </body>
+</html>

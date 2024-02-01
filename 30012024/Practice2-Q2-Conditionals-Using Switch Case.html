@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Switch Case Example</title>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        </style>
+    </head>
+    <body>
+        <script>
+    // Switch Case Example
+    let dayNumber = prompt("Enter a number for the day (1-7)");
+    let dayName;
+
+    switch (parseInt(dayNumber)) {
+        case 1:
+            dayName = "Sunday";
+            break;
+        case 2:
+            dayName = "Monday";
+            break;
+        case 3:
+            dayName = "Tuesday";
+            break;
+        case 4:
+            dayName = "Wednesday";
+            break;
+        case 5:
+            dayName = "Thursday";
+            break;
+        case 6:
+            dayName = "Friday";
+            break;
+        case 7:
+            dayName = "Saturday";
+            break;
+        default:
+            dayName = "Invalid Day";
+    }
+
+    displayResult("Day of the Week", dayNumber, dayName);
+
+    // Helper function to display results in a table
+    function displayResult(title, input, result) {
+        document.write("<h2>" + title + "</h2>");
+        document.write("<table>");
+        document.write("<tr><th>Input</th><th>Result</th></tr>");
+        document.write("<tr><td>" + input + "</td><td>" + result + "</td></tr>");
+        document.write("</table>");
+    }
+        </script>
+    </body>
+</html>

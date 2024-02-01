@@ -1,0 +1,34 @@
+<!-- Example 3: Weather App with API -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Example 3</title>
+        <link href="style2.css" rel="stylesheet">
+    </head>
+    <body>
+        <script src="app.js"></script>
+        <script>
+            // Weather app functionality
+            const weatherApp = {
+                apiKey: "YOUR_API_KEY",
+                getWeather: function(city) {
+                    // Assume there's an API call here
+                    // In a real scenario, fetch data from an API
+                    console.log("Fetching weather for " + city);
+                },
+                displayWeather: function(city, temperature) {
+                    console.log("Weather in " + city + ": " + temperature + "°C");
+                }
+            };
+
+            // Get and display weather for multiple cities
+            const cities = ["New York", "London", "Tokyo"];
+            cities.forEach(function(city) {
+                weatherApp.getWeather(city);
+                weatherApp.displayWeather(city, Math.floor(Math.random() * 30) + 1);
+            });
+        </script>
+    </body>
+</html>

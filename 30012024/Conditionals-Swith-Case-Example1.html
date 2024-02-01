@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Switch Case Table</title>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        </style>
+    </head>
+    <body>
+        <script>
+    // Switch Case Table Example
+    let dayOfWeek = prompt("Enter a day of the week").toLowerCase();
+    let dayType;
+
+    switch (dayOfWeek) {
+        case "monday":
+        case "tuesday":
+        case "wednesday":
+        case "thursday":
+        case "friday":
+            dayType = "Weekday";
+            break;
+        case "saturday":
+        case "sunday":
+            dayType = "Weekend";
+            break;
+        default:
+            dayType = "Invalid Day";
+    }
+
+    // Display the result in an HTML table
+    document.write("<h2>Switch Case Table Example</h2>");
+    document.write("<table>");
+    document.write("<tr><th>Day</th><th>Type</th></tr>");
+    document.write("<tr><td>" + dayOfWeek + "</td><td>" + dayType + "</td></tr>");
+    document.write("</table>");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!-- Example 4: Using Symbols in Objects -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Example 4</title>
+        <link href="style2.css" rel="stylesheet">
+    </head>
+    <body>
+        <script src="app.js"></script>
+        <script>
+            // Using symbols in objects
+            const sym = Symbol("mySymbol");
+            const obj = {
+                [sym]: "Symbol value"
+            };
+
+            console.log(obj[sym]);
+        </script>
+    </body>
+</html>

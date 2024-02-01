@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>My Javascript_4_index_let_test_4</title>
+        <link href="style2.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Add an h1 element with an id for easier reference -->
+        <h1 id="exercise-heading">Let Exercise</h1>
+        <!-- Include the JavaScript file -->
+        <script src="app.js"></script>
+        <!-- JavaScript to update the content of the h1 element using let -->
+        <script>
+            // Declared a variable using let
+            let exercise = "Hello, World_Let Test!";
+
+            // Logged the variable to the console
+            console.log(exercise);
+
+            // Updated the variable
+            exercise = "Hi there - same thing but when said, is much cooler!";
+
+            // Logged the updated variable to the console
+            console.log(exercise);
+
+            // Updated the content of the h1 element
+            document.getElementById("exercise-heading").textContent = exercise;
+        </script>
+    </body>
+</html>

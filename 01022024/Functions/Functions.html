@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Concepts</title>
+    </head>
+    <body>
+        <script>
+  // 1. Scope:
+  // Functions create their own scope in JavaScript.
+  // Variables declared inside a function are local to that function and not accessible outside of it.
+
+  // 2. Function Expression:
+  // Functions can be assigned to variables, creating function expressions.
+  // In this example, greet is a variable holding an anonymous function.
+  let greet = function() {
+    console.log("Hello, world!");
+  };
+
+  // Calling/invoking the function
+  greet();
+
+  // 3. Default Parameters:
+  // You can provide default values for function parameters.
+  // If a value is not passed for a parameter, the default value is used.
+  function greetWithDefault(name = "world") {
+    console.log(`Hello, ${name}!`);
+  }
+
+  // Calling/invoking the function with default and specific values
+  greetWithDefault();      // Outputs: Hello, world!
+  greetWithDefault("John"); // Outputs: Hello, John!
+
+  // 4. Rest Parameters:
+  // You can use the rest parameter (...) to represent an indefinite number of arguments as an array.
+  function sum(...numbers) {
+    return numbers.reduce((acc, num) => acc + num, 0);
+  }
+
+  // Calling/invoking the function with variable arguments
+  console.log(sum(1, 2, 3, 4)); // Outputs: 10
+
+  // 5. Callback Functions:
+  // Functions can be passed as arguments to other functions, known as callback functions.
+  function doSomething(callback) {
+    console.log("Doing something...");
+    callback();
+  }
+
+  function sayGoodbye() {
+    console.log("Goodbye!");
+  }
+
+  // Calling/invoking the function with a callback
+  doSomething(sayGoodbye);
+
+  // 6. Immediately Invoked Function Expression (IIFE):
+  // Functions can be invoked immediately after they're defined. This is known as an IIFE.
+  (function() {
+    console.log("I am an IIFE!");
+  })();
+
+  // 7. Closures:
+  // A closure is a function bundled together with references to its surrounding state.
+  // It allows you to encapsulate functionality and create private variables.
+  function outerFunction() {
+    let outerVariable = 10;
+
+    function innerFunction() {
+      console.log(outerVariable);
+    }
+
+    return innerFunction;
+  }
+
+  let closureExample = outerFunction();
+  closureExample(); // Outputs: 10
+        </script>
+    </body>
+</html>

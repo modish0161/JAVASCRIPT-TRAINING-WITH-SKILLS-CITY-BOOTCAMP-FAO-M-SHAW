@@ -1,0 +1,27 @@
+<!-- Example 3: Dynamic Object Modification -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Example 3</title>
+        <link href="style2.css" rel="stylesheet">
+    </head>
+    <body>
+        <script src="app.js"></script>
+        <script>
+            // Modifying object dynamically
+            let propertyName = "height";
+            let propertyValue = 180;
+
+            const person = {
+                name: "Bob",
+                age: 28
+            };
+
+            person[propertyName] = propertyValue;
+
+            console.log(person);
+        </script>
+    </body>
+</html>

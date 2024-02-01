@@ -1,0 +1,49 @@
+<!-- Example 2: Shopping Cart System -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Example 2</title>
+        <link href="style2.css" rel="stylesheet">
+    </head>
+    <body>
+        <script src="app.js"></script>
+        <script>
+            // Product object
+            function Product(name, price, quantity) {
+                this.name = name;
+                this.price = price;
+                this.quantity = quantity;
+                this.calculateTotal = function() {
+                    return this.price * this.quantity;
+                };
+            }
+
+            // Shopping cart object
+            const shoppingCart = {
+                items: [],
+                addItem: function(product) {
+                    this.items.push(product);
+                },
+                calculateTotal: function() {
+                    let total = 0;
+                    this.items.forEach(function(item) {
+                        total += item.calculateTotal();
+                    });
+                    return total;
+                }
+            };
+
+            // Add products to the cart
+            const product1 = new Product("Laptop", 999.99, 2);
+            const product2 = new Product("Headphones", 49.99, 3);
+
+            shoppingCart.addItem(product1);
+            shoppingCart.addItem(product2);
+
+            // Display total price in the cart
+            console.log("Total Price in the Cart: $" + shoppingCart.calculateTotal());
+        </script>
+    </body>
+</html>

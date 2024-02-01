@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conditional Examples</title>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        </style>
+    </head>
+    <body>
+        <script>
+    // Example 1: Checking Eligibility for Voting
+    let age1 = prompt("Enter your age");
+    let eligibility1 = age1 >= 18 ? "Eligible to Vote" : "Not Eligible to Vote";
+    displayResult("Voting Eligibility", age1, eligibility1);
+
+    // Example 2: Checking Positive, Negative, or Zero
+    let number = prompt("Enter a number");
+    let result2 =
+        number > 0 ? "Positive" :
+        number < 0 ? "Negative" :
+        "Zero";
+    displayResult("Positive, Negative, or Zero", number, result2);
+
+    // Example 3: Checking Even or Odd
+    let num = prompt("Enter a number");
+    let result3 = num % 2 === 0 ? "Even" : "Odd";
+    displayResult("Even or Odd", num, result3);
+
+    // Helper function to display results in a table
+    function displayResult(title, input, result) {
+        document.write("<h2>" + title + "</h2>");
+        document.write("<table>");
+        document.write("<tr><th>Input</th><th>Result</th></tr>");
+        document.write("<tr><td>" + input + "</td><td>" + result + "</td></tr>");
+        document.write("</table>");
+    }
+        </script>
+    </body>
+</html>

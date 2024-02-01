@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Example 2: while Loop without i++</title>
+    </head>
+    <body>
+        <script>
+  // Example 2: Using a while loop to print numbers from 0 to user input without i++
+  let input = prompt("Enter a number");
+  input = Number(input); // Convert user input to a number
+  let i = 0;
+
+  // This while loop will run indefinitely without i++.
+  // To stop the loop, press Ctrl+C in the browser console.
+  while (i < input) {
+    console.log(i); // print the current value of i
+  }
+        </script>
+    </body>
+</html>

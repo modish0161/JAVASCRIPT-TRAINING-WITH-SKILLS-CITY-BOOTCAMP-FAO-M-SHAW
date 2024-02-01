@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>My Javascript_6_index_var_test_6</title>
+        <link href="style2.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Add an h1 element with an id for easier reference -->
+        <h1 id="exercise-heading">Var Exercise</h1>
+        <!-- Include the JavaScript file -->
+        <script src="app.js"></script>
+        <!-- JavaScript to update the content of the h1 element using var -->
+        <script>
+            // Declare a variable using var with a number
+            var numberExample = 42;
+
+            // Log the variable to the console
+            console.log(numberExample);
+
+            // Update the variable with a different number
+            numberExample = 99;
+
+            // Log the updated variable to the console
+            console.log(numberExample);
+
+            // Update the content of the h1 element
+            document.getElementById("exercise-heading").textContent = "The chosen number is: " + numberExample;
+        </script>
+    </body>
+</html>

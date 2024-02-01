@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Skills City Exercise-Life-Calculator</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        </style>
+    </head>
+    <body>
+        <h2>Life Expectancy Calculator</h2>
+        <label for="currentAge">Enter your current age:</label>
+        <input
+            type="number"
+            id="currentAge"
+            placeholder="Your age"
+            required
+        >
+        <button onclick="calculateRemainingTime()">Calculate</button>
+        <h3>Result:</h3>
+        <p id="result"></p>
+        <script>
+        function calculateRemainingTime() {
+            var currentAge = parseInt(document.getElementById("currentAge").value);
+
+            if (isNaN(currentAge) || currentAge <= 0) {
+                alert("Please enter a valid age.");
+                return;
+            }
+
+            var lifeExpectancy = 90;
+            var remainingDays = (lifeExpectancy - currentAge) * 365;
+            var remainingWeeks = (lifeExpectancy - currentAge) * 52;
+            var remainingMonths = (lifeExpectancy - currentAge) * 12;
+
+            var resultMessage = "You have " + remainingDays + " days, " + remainingWeeks + " weeks, and " + remainingMonths + " months left until you reach 90 years old.";
+            document.getElementById("result").innerHTML = resultMessage;
+
+            console.log(resultMessage);
+        }
+        </script>
+    </body>
+</html>

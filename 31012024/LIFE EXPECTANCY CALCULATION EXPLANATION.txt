@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Life Expectancy Calculator</title>
+        <!-- CSS styles for better presentation -->
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        </style>
+    </head>
+    <body>
+
+        <!-- Heading for the calculator -->
+
+        <h2>Life Expectancy Calculator</h2>
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+        <!-- Input field for entering the current age -->
+
+        <label for="currentAge">Enter your current age:</label>
+        <input
+            type="number"
+            id="currentAge"
+            placeholder="Your age"
+            required
+        >
+        <!-- Button to trigger the calculation when clicked -->
+
+        <button onclick="calculateRemainingTime()">Calculate</button>
+
+        <!-- Heading for the result -->
+        <h3>Result:</h3>
+
+        <!-- Paragraph to display the result -->
+
+        <p id="result"></p>
+
+        <!-- JavaScript code for calculating and displaying the result -->
+
+        <script>
+        function calculateRemainingTime() {
+            // Retrieve the current age from the input field and convert it to an integer
+            var currentAge = parseInt(document.getElementById("currentAge").value);
+
+            // Validate the input: Ensure the entered age is a positive number
+            if (isNaN(currentAge) || currentAge <= 0) {
+                alert("Please enter a valid age.");
+                return;
+            }
+
+            // Set the life expectancy to 90 years
+            var lifeExpectancy = 90;
+
+            // Calculate the remaining days, weeks, and months until reaching 90 years old
+            var remainingDays = (lifeExpectancy - currentAge) * 365;
+            var remainingWeeks = (lifeExpectancy - currentAge) * 52;
+            var remainingMonths = (lifeExpectancy - currentAge) * 12;
+
+            // Create a message with the calculated values
+            var resultMessage = "You have " + remainingDays + " days, " + remainingWeeks + " weeks, and " + remainingMonths + " months left until you reach 90 years old.";
+
+            //

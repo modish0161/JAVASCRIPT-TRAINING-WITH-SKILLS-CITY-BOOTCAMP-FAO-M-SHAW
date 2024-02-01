@@ -1,0 +1,38 @@
+<!-- Example 1: Dynamic User Profile -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Example 1</title>
+        <link href="style2.css" rel="stylesheet">
+    </head>
+    <body>
+        <script src="app.js"></script>
+        <script>
+            // User profile object
+            const userProfile = {
+                username: "jsMaster",
+                age: 28,
+                isAdmin: true,
+                updateProfile: function(newUsername, newAge) {
+                    this.username = newUsername;
+                    this.age = newAge;
+                }
+            };
+
+            // Function to display user profile
+            function displayUserProfile(profile) {
+                console.log("Username: " + profile.username);
+                console.log("Age: " + profile.age);
+                console.log("Is Admin: " + (profile.isAdmin ? "Yes" : "No"));
+            }
+
+            // Update the user profile
+            userProfile.updateProfile("newJsMaster", 30);
+
+            // Display the updated user profile
+            displayUserProfile(userProfile);
+        </script>
+    </body>
+</html>

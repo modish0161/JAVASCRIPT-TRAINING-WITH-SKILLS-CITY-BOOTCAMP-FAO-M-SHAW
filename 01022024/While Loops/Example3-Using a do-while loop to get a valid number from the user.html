@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Example 3: do-while Loop for Valid Number</title>
+    </head>
+    <body>
+        <script>
+  // Example 3: Using a do-while loop to get a valid number from the user
+  let input;
+
+  // First do-while loop ensures the user enters a valid number
+  do {
+    input = prompt("Enter a number");
+    input = Number(input); // Convert user input to a number
+  } while (isNaN(input)); // Keep looping until a valid number is entered
+
+  let i = 0;
+
+  // Second do-while loop prints numbers from 0 to the user input
+  do {
+    console.log(i);
+    i++;
+  } while (i < input);
+        </script>
+    </body>
+</html>

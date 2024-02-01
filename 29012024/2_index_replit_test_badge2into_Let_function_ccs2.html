@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>My first Javascript</title>
+        <link href="style2.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Add an h1 element with an id for easier reference -->
+        <h1 id="greeting-heading">Initial Greeting</h1>
+        <!-- Include the replit badge script -->
+        <script src="https://replit.com/public/js/replit-badge.js" theme="red" defer></script>
+        <!-- JavaScript to update the content of the h1 element using let -->
+        <script>
+            // Declare a variable using let
+            let greeting = "Hello, World!";
+
+            // Log the variable to the console
+            console.log(greeting);
+
+            // Update the content of the h1 element
+            document.getElementById("greeting-heading").textContent = greeting;
+        </script>
+    </body>
+</html>

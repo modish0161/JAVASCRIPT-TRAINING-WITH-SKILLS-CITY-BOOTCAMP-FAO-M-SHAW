@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Examples</title>
+    </head>
+    <body>
+        <script>
+    // Getting User Input
+    // Example 1
+    let age1 = prompt("Enter your age (string)");
+    console.log("Example 1: typeof age1 =", typeof age1);
+
+    // Example 2
+    let age2 = prompt("Enter your age (string)");
+    console.log("Example 2: typeof age2 =", typeof age2);
+    age2 = Number(age2);
+    console.log("Example 2: typeof age2 after conversion =", typeof age2);
+
+    // Example 3
+    let age3 = prompt("Enter your age (string)");
+    console.log("Example 3: typeof age3 =", typeof age3);
+    age3 = parseInt(age3);
+    console.log("Example 3: typeof age3 after conversion =", typeof age3);
+
+    // Conditional Statements
+    // Program 1
+    let input1 = prompt("Enter a string");
+    if (input1 === "Hello") {
+        console.log("Program 1: Hello World");
+    }
+
+    // Program 2
+    let input2 = prompt("Enter a string");
+    if (input2 === "Hello") {
+        console.log("Program 2: Hello World");
+    } else {
+        console.log("Program 2: Goodbye World");
+    }
+
+    // Program 3
+    let input3 = prompt("Enter a string");
+    if (input3 === "Hello") {
+        console.log("Program 3: Hello World");
+    } else if (input3 === "Goodbye") {
+        console.log("Program 3: Goodbye World");
+    } else {
+        console.log("Program 3: Invalid Input");
+    }
+
+    // Ternary Operator
+    // Example
+    let input4 = prompt("Enter a string");
+    input4 === "Hello" ? console.log("Ternary Example: Hello World") : console.log("Ternary Example: Goodbye World");
+        </script>
+    </body>
+</html>

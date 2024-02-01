@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Age Range Check</title>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        </style>
+    </head>
+    <body>
+        <script>
+    // Age Range Check
+    let age = prompt("Enter your age");
+    let isInRange = age >= 10 && age <= 20;
+
+    displayResult("Age Range Check", age, isInRange ? "In Range" : "Not in Range");
+
+    // Helper function to display results in a table
+    function displayResult(title, input, result) {
+        document.write("<h2>" + title + "</h2>");
+        document.write("<table>");
+        document.write("<tr><th>Input</th><th>Result</th></tr>");
+        document.write("<tr><td>" + input + "</td><td>" + result + "</td></tr>");
+        document.write("</table>");
+    }
+        </script>
+    </body>
+</html>
